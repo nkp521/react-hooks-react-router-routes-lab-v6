@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import { useParams } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 
 function Movie() {
   const [movie, setMovie] = useState(null);
@@ -30,7 +30,7 @@ function Movie() {
       <header>
         <NavBar />
       </header>
-      <main>{renderMovieDetails()}</main>
+      <main>{!movie ? <h1>Loading...</h1> : renderMovieDetails()}</main>
     </>
   );
 }

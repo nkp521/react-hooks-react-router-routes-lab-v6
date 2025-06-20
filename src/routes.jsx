@@ -1,3 +1,4 @@
+import React from "react";
 import Home from "./pages/Home";
 import Directors from "./pages/Directors";
 import Actors from "./pages/Actors";
@@ -11,17 +12,17 @@ const routes = [
     errorElement: <ErrorPage />,
   },
   {
-    path: "/Directors",
+    path: "/directors",
     element: <Directors />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/Actors",
+    path: "/actors",
     element: <Actors />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/Movie",
+    path: "/movie/:id",
     element: <Movie />,
     errorElement: <ErrorPage />,
   },
