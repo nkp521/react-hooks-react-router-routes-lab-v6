@@ -12,10 +12,6 @@ function Home() {
       .catch((err) => console.log(err));
   }, []);
 
-  if (movies.length === 0) {
-    return <h1>Loading...</h1>;
-  }
-
   const renderMovies = () =>
     movies.map((movie) => (
       <MovieCard key={movie.id} id={movie.id} title={movie.title} />

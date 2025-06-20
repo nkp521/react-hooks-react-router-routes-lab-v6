@@ -18,8 +18,8 @@ function Movie() {
       <div>
         <h1>{movie.title}</h1>
         <p>{movie.time}</p>
-        {movie.genres.map((genre, idx) => (
-          <span key={idx}>{genre}</span>
+        {movie.genres.map((genre, id) => (
+          <span key={id}>{genre}</span>
         ))}
       </div>
     );
